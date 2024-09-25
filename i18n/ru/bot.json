@@ -1,0 +1,15 @@
+{
+  "message": {
+    "start": "Привет, хомяк!",
+    "successLogin": "Вы успешно залогинильсь, вернитесь на сайт",
+    "startBotFromSiteLink": "Запустите бота по ссылке с сайта",
+    "promoCodeIsNotAvailable": "Вы можете получать промокод только один раз в 4 часа. \n\nЧтобы не ждать 4 часа и получить промокод прямо сейчас, пригласите {count} друзей по этой ссылке: \n\n{link}",
+    "promoCodeMessage": "Вот ваши промокоды: \n{promoCodes}\n\nКуда вводить промокод? Если код начинается на:\nRACE - Mud Racing\nTRIM - Mow and Trim\nPOLY - Polysphere\nTWERK - Twerk Race\nMERGE - Merge Away\nCUBE - Chain Cube 2024\nTRAIN - Train Miner\nBIKE - Bike Ride 3D\n\nНадоело вводить коды вручную? Подключайте <a href='https://t.me/hamsters_barber_ru/41'>АВТОПРОКАЧКУ</a>!",
+    "mainMenu": "Привет! Нужен промокод для Hamster Kombat?",
+    "myReferrals": "Вот список пользователей, запустивших бота по вашей ссылке:\n{referralsText}\n\nВсего приглашено: {referralsCount}\nНужно пригласить для получения нового промокода: {needToReceiveNextCode}"
+  },
+  "button": {
+    "getPromoCode": "Получить промокод",
+    "myReferrals": "Мои рефералы"
+  }
+}

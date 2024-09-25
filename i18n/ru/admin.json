@@ -1,0 +1,47 @@
+{
+    "message": {
+        "usersStatus": "Всего пользователей: {allUsers}\nАктивных пользователей: {activeUsers}\nАктивность: {recentActive}\n\nИсточник - всего (+ за {userSourceDays} дней): \n{userSource}",
+        "gameStatus": "Всего профилей: {playersCount}\nЖенщин:  {female}| Мужчин: {male} | М/Ж: {rate}\nАктивных игр: {activeGamesCount} | Игроков в очереди: Мужчин: {waitingMale} | Женщин: {waitingFemale}\nИгр вчера: {gamesCountYesterday} | Игр сегодня: {gamesCountToday}\nВопросов сегодня: {questionsCountToday} | Ответов сегодня: {answersCountToday} | Выборов сегодня: {picksCountToday} | Чатов сегодня: {chatsCountToday}",
+        "approved": "Принято",
+        "rejected": "Отклонено",
+        "deleted": "Удалено",
+        "empty": "Пусто",
+        "errorOccurred": "Произошла ошибка",
+        "forbidden": "Доступ запрещен",
+        "confirm": "Вы уверены?",
+        "welcomeAdmin": "Привет, админ",
+        "notImplemented": "Не реализовано",
+        "noMore": "Больше нет",
+        "mainMenu": "Меню",
+        "byeAdmin": "Пока, админ"
+    },
+    "button": {
+        "approve": "Принять",
+        "reject": "Отклонить",
+        "next": "Следующий",
+        "skip": "Пропустить",
+        "delete": "Удалить",
+        "cancel": "Отмена",
+        "stop": "Остановить",
+        "forward": "Вперед",
+        "back": "Назад",
+        "yes": "Да",
+        "no": "Нет",
+        "close": "Закрыть",
+        "mailing": "Рассылки",
+        "creatives": "Креативы",
+        "sponsors": "Обязательные подписки",
+        "usersList": "Экспорт списка пользователей",
+        "statistic": "Статистика"
+    },
+    "commandDescription": {
+        "settings": "Настройки языка",
+        "start": "Перезапустить бота",
+        "admin": "Меню администратора",
+        "mailing": "Меню рассылок",
+        "exitAdmin": "Закрыть меню администратора",
+        "usersList": "Экспорт списка пользователей",
+        "status": "Статистика",
+        "restart": "Перезапустить бота"
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "message": {
+    "isALastPage": "This is the last page",
+    "isAFirstPage": "This is the first page"
+  },
+  "button": {
+    "approve": "Accept",
+    "reject": "Reject",
+    "next": "Next",
+    "skip": "Skip",
+    "delete": "Delete",
+    "restore": "Restore",
+    "cancel": "Cancel",
+    "stop": "Stop",
+    "forward": "Forward",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "exit": "Exit"
+  }
+}

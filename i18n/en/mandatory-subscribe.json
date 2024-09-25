@@ -1,0 +1,48 @@
+{
+  "message": {
+    "mandatory_subscribe_text": "To continue using the bot, you need to subscribe to our channels:",
+    "mandatory_subscribe_default_btn_text": "Channel",
+    "adminEnter": "Mandatory subscriptions\n\nTo check the subscription, the channel admin must add the @{subCheckerBot} bot to the admins of his channel!",
+    "enterManagerUsername": "Enter the customer's username or forward any message from him",
+    "enterIsBot": "What are we going to subscribe to?",
+    "enterBotToken": "Send the bot token",
+    "enterLink": "Enter the invitation link",
+    "enterLangs": "Enter langs.\nFor example: \"ru, en\"",
+    "enterTitle": "Enter the text for the button",
+    "enterName": "Enter the name of the mandatory subscription (visible only to the admin)",
+    "enterChannelId": "Enter the channel/group ID or forward any message from the channel. Make sure that forwarding not reposting.",
+    "activeSponsor": "Active subscriptions",
+    "disabledSponsor": "Disabled subscriptions",
+    "botNotAdmin": "Make sure the bot is added to the channel administrators",
+    "empty": "Empty",
+    "viewSponsor": "Sponsor: {id}\n\nName: {name}\nManager: {manager}\nLink: {link}\nChannel ID: {channelId}\nButton caption: {title}\nLanguages: {langs}\n\nApproximate number of subscriptions (may be significantly less, since the user may already be subscribed to the channel and will pass verification. ): {count}"
+  },
+  "button": {
+    "next": "Next",
+    "skip": "Skip",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "stop": "Stop",
+    "forward": "Forward",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "new": "New",
+    "active": "Active",
+    "disabled": "Disabled",
+    "toggleactive": "Active",
+    "remove": "Delete",
+    "restore": "Restore",
+    "all": "All",
+    "check": "I'm subscribed",
+    "bot": "Bot",
+    "editLink": "Edit link",
+    "editLangs": "Edit langs",
+    "refresh": "Refresh",
+    "channel": "Channel or group"
+  },
+  "commandDescription": {
+    "exitAdmin": "Close menu administrator"
+  }
+}

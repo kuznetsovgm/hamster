@@ -1,0 +1,87 @@
+version: '3.7'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    container_name: hamster-bot
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    volumes:
+      - ${PROJECT_DATA}/i18n:/opt/app/i18n:ro
+      - ${PROJECT_DATA}/.env:/opt/app/.env:ro
+    depends_on:
+      - postgres
+      - prometheus
+    networks:
+      - hamster-net
+
+  postgres:
+    container_name: hamster-postgres
+    image: postgres:latest
+    restart: always
+    volumes:
+      - postgres-data:/var/lib/postgresql/data:rw
+    ports:
+      - ${DB_PORT_EXPOSE}:5432
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    networks:
+      - hamster-net
+
+  redis:
+    image: redis/redis-stack:latest
+    container_name: hamster-redis
+    restart: always
+    # command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - redis-data:/data:rw
+      # - ./config/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+      - hamster-net
+    ports:
+      - ${REDIS_PORT}:6379
+      - ${REDIS_INSIGHT_PORT}:8001
+    environment:
+      - REDIS_USER=${REDIS_USER}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_ARGS=--requirepass ${REDIS_PASSWORD}
+    user: root
+
+  prometheus:
+    container_name: hamster-prometheus
+    image: prom/prometheus
+    restart: always
+    volumes:
+      - ${PROJECT_DATA}/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - ${PROMETHEUS_PORT}:9090
+    environment:
+      - HOST_IP=${HOST_IP}
+      - APP_PORT=${APP_PORT}
+    networks:
+      - hamster-net
+    user: root
+
+  grafana:
+    container_name: hamster-grafana
+    image: grafana/grafana
+    restart: always
+    volumes:
+      - grafana-data:/var/lib/grafana:rw
+    ports:
+      - ${GRAFANA_PORT}:3000
+    networks:
+      - hamster-net
+
+networks:
+  hamster-net:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  redis-data:
+  grafana-data:

@@ -1,0 +1,17 @@
+{
+  "button": {
+    "approve": "Accept",
+    "reject": "Reject",
+    "next": "Next",
+    "skip": "Skip",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "stop": "Stop",
+    "forward": "Forward",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "exit": "Exit"
+  }
+}

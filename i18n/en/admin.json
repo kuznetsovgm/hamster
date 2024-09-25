@@ -1,0 +1,47 @@
+{
+  "message": {
+    "usersStatus": "Total users: {allUsers}\nActive users: {activeUsers}\nActivity: {recentActive}\n\nSource - total (+ for {userSourceDays} days): \n{userSource}",
+    "gameStatus": "Total profiles: {playersCount}\nFemale: {female}| Male: {male} | M/F: {rate}\nActive games: {activeGamesCount} | Players in queue: Male: {waitingMale} | Female: {waitingFemale}\nGames yesterday: {gamesCountYesterday} | Games today: {gamesCountToday}\nQuestions today: {questionsCountToday} | Answers today: {answersCountToday} | Elections today: {picksCountToday} | Chats today: {chatsCountToday}",
+    "approved": "Accepted",
+    "rejected": "Rejected",
+    "deleted": "Deleted",
+    "empty": "Empty",
+    "errorOccurred": "An error occurred",
+    "forbidden": "Access denied",
+    "confirm": "Are you sure?",
+    "welcomeAdmin": "Hello, admin",
+    "notImplemented": "Not implemented",
+    "noMore": "No more",
+    "mainMenu": "Menu",
+    "byeAdmin": "Bye, admin"
+  },
+  "button": {
+    "approve": "Accept",
+    "reject": "Reject",
+    "next": "Next",
+    "skip": "Skip",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "stop": "Stop",
+    "forward": "Forward",
+    "back": "Back",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "mailing": "Mailings",
+    "creatives": "Creatives",
+    "sponsors": "Required subscriptions",
+    "usersList": "Export user list",
+    "statistic": "Statistics"
+  },
+  "commandDescription": {
+    "settings": "Language settings",
+    "start": "Restart bot",
+    "admin": "Administrator menu",
+    "mailing": "Mailings menu",
+    "exitAdmin": "Close admin menu",
+    "usersList": "Export user list",
+    "status": "Statistics",
+    "restart": "Restart bot"
+  }
+}

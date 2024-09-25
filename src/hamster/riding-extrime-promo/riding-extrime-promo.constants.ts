@@ -1,0 +1,1 @@
+export const GET_PROMO_CODE_INTERVAL_HOURS = 4;
